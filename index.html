@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMasti - Diploma Student Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">TechMasti 🎓</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#blog">My Blog</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <!-- Chhota sa cute icon upar -->
+            <div class="welcome-icon">🎓</div>
+            
+            <h1>Welcome to My TechMasti World! 🚀</h1>
+            <p class="tagline">Diploma 1st Year Student | Learning & Growing Daily</p>
+            <button class="btn-primary" onclick="showWelcome()">Click to Know Me! ✨</button>
+            <div id="welcome-info" class="hidden-info">
+                <p>Hey! I'm a curious diploma student exploring the world of technology. This blog is my digital diary where I share my learning journey, projects, and masti moments! 🎯</p>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <span>💻</span>
+            <span>⚡</span>
+            <span>🎨</span>
+            <span>🔧</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <h2>About Me 👨‍🎓</h2>
+        <div class="about-container">
+            <div class="about-card">
+                <div class="profile-emoji">👨‍💻</div>
+                <h3>Who Am I?</h3>
+                <button class="btn-reveal" onclick="toggleInfo('personal-info')">Click to Reveal 🔍</button>
+                <div id="personal-info" class="hidden-content">
+                    <ul>
+                        <li>📚 Diploma 1st Year Student</li>
+                        <li>🏫 Government Polytechnic College</li>
+                        <li>🔧 Branch: Computer Engineering</li>
+                        <li>📍 From: India</li>
+                        <li>🎂 Age: 18 Years Young!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <div class="profile-emoji">🎯</div>
+                <h3>My Goals</h3>
+                <button class="btn-reveal" onclick="toggleInfo('goals-info')">Click to Reveal 🚀</button>
+                <div id="goals-info" class="hidden-content">
+                    <ul>
+                        <li>🌟 Become a Full Stack Developer</li>
+                        <li>📱 Create Amazing Mobile Apps</li>
+                        <li>🏆 Win Coding Competitions</li>
+                        <li>💼 Get Placement in Top Company</li>
+                        <li>🌍 Travel & Work Worldwide</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <div class="profile-emoji">❤️</div>
+                <h3>My Interests</h3>
+                <button class="btn-reveal" onclick="toggleInfo('interests-info')">Click to Reveal 🎮</button>
+                <div id="interests-info" class="hidden-content">
+                    <ul>
+                        <li>💻 Coding & Programming</li>
+                        <li>🎮 Gaming (subway suffers)</li>
+                        <li>📸 Photography & Editing</li>
+                        <li>🎵 Music & Movies</li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section blog-section">
+        <h2>My Learning Blog 📝</h2>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="blog-date">📅 March 2024</div>
+                <h3>My First Semester Experience</h3>
+                <button class="btn-read" onclick="toggleInfo('blog1')">Read Full Story 📖</button>
+                <div id="blog1" class="hidden-content blog-content">
+                    <p>Starting diploma was scary but exciting! First semester taught me basics of C programming, engineering drawing, and applied mathematics. Made amazing friends and learned that college life is all about balance between studies and masti!</p>
+                    <p><strong>Key Learnings:</strong> Time management, basic coding logic, making technical drawings</p>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-date">📅 February 2024</div>
+                <h3>Learning HTML & CSS</h3>
+                <button class="btn-read" onclick="toggleInfo('blog2')">Read Full Story 📖</button>
+                <div id="blog2" class="hidden-content blog-content">
+                    <p>Web development seemed tough at first, but once I understood tags and styling, it became fun! Creating my first webpage felt like magic. Now I'm building this blog to practice my skills!</p>
+                    <p><strong>Projects:</strong> Personal portfolio, college website clone, blog site</p>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-date">📅 January 2024</div>
+                <h3>College Life & Friends</h3>
+                <button class="btn-read" onclick="toggleInfo('blog3')">Read Full Story 📖</button>
+                <div id="blog3" class="hidden-content blog-content">
+                    <p>College canteen became our second home! Group studies, late night coding sessions, and endless chai-sutta breaks. Made a gang of 4 friends who support each other in every assignment!</p>
+                    <p><strong>Memories:</strong> First presentation, sports day, technical fest participation</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <h2>My Mini Projects 🛠️</h2>
+        <div class="projects-container">
+            <div class="project-item">
+                <div class="project-thumb">🌐</div>
+                <h4>Portfolio Website</h4>
+                <button class="btn-project" onclick="toggleInfo('proj1')">View Details 👀</button>
+                <div id="proj1" class="hidden-content project-details">
+                    <p><strong>Tech:</strong> HTML, CSS</p>
+                    <p><strong>Status:</strong> ✅ Completed</p>
+                    <p>My first responsive website showcasing my skills and projects.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-thumb">🧮</div>
+                <h4>Calculator App</h4>
+                <button class="btn-project" onclick="toggleInfo('proj2')">View Details 👀</button>
+                <div id="proj2" class="hidden-content project-details">
+                    <p><strong>Tech:</strong> C Language</p>
+                    <p><strong>Status:</strong> ✅ Completed</p>
+                    <p>Basic calculator with addition, subtraction, multiplication, division operations.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-thumb">📋</div>
+                <h4>To-Do List</h4>
+                <button class="btn-project" onclick="toggleInfo('proj3')">View Details 👀</button>
+                <div id="proj3" class="hidden-content project-details">
+                    <p><strong>Tech:</strong> HTML, CSS, Basic JS</p>
+                    <p><strong>Status:</strong> 🔄 In Progress</p>
+                    <p>Task management app to organize daily college assignments and deadlines.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-thumb">🎮</div>
+                <h4>Number Guessing Game</h4>
+                <button class="btn-project" onclick="toggleInfo('proj4')">View Details 👀</button>
+                <div id="proj4" class="hidden-content project-details">
+                    <p><strong>Tech:</strong> C Language</p>
+                    <p><strong>Status:</strong> ✅ Completed</p>
+                    <p>Fun CLI game where computer guesses number and user gets hints!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <h2>Let's Connect! 📞</h2>
+        <div class="contact-box">
+            <button class="btn-contact" onclick="toggleInfo('contact-info')">Show Contact Details 📧</button>
+            <div id="contact-info" class="hidden-content contact-details">
+                <div class="contact-item">📧 Email: student.techmasti@gmail.com</div>
+                <div class="contact-item">📱 Phone: +91 98XXX XXXXX</div>
+                <div class="contact-item">💼 LinkedIn: /in/techmasti-student</div>
+                <div class="contact-item">🐙 GitHub: github.com/techmasti-student</div>
+                <div class="contact-item">📸 Instagram: @techmasti_diploma</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ❤️ by Diploma Student | TechMasti Blog © 2024</p>
+        <p>🎓 Learning Never Stops! 🚀</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
